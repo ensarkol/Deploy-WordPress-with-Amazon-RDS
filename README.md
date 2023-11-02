@@ -31,16 +31,16 @@ By visiting the public DNS of our EC2 instance in our browser we will see that o
 
 In this step, we will download the WordPress software and set up the configuration. First, I downloaded and unzipped the software by running the following commands in our terminal:
 
-
+```
 wget https://wordpress.org/latest.tar.gz
 tar -xzf latest.tar.gz
-
+```
 
 I ran ls to view the contents of your directory, I saw a tar file and a directory named wordpress with uncompressed content.
 
-
+```
 $ ls
-
+```
 
 The output should look like the following:
 
@@ -48,14 +48,14 @@ The output should look like the following:
 latest.tar.gz wordpress
 
 I changed the directory to the wordpress directory and created a copy of the default configuration file using the following commands:
-
+```
 cd wordpress
 cp wp-config-sample.php wp-config.php
-
+```
 Then, I opened the wp-config.php file using the nano editor by running the following command.
-
+```
 nano wp-config.php
-
+```
 We need to edit two configuration fields.
 First, I edited the database configuration by modifying the following lines:
 
@@ -107,22 +107,22 @@ You should find a link that targets an API endpoint used to generate a randomly 
 # Deploying Wordpress
 
 In this step, we will make sure that our Apache web server handles incoming requests for WordPress.First, let's install the application dependencies we need for WordPress. Let's run the following command in our terminal.
-
+```
 sudo apt update
 sudo apt install -y mariadb-server php8.2
-
+```
 Second, let's move to the appropriate directory by running the following command:
-
+```
 cd /home/ec2-user
-
+```
 Next, let's copy our WordPress application files to the /var/www/html directory used by Apache.
-
+```
 sudo cp -r wordpress/* /var/www/html/
-
+```
 Finally, let's restart the Apache web server to get the changes.
-
+```
 sudo systemctl restart apache2
-
+```
 That's it. We have a live, publicly accessible WordPress installation using a fully managed MySQL database on Amazon RDS.
 
 
