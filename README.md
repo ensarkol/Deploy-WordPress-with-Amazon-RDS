@@ -22,8 +22,9 @@ sudo yum install -y httpd
 I ran the following command in my terminal to start the Apache web server:
 
 ####
+```
 sudo systemctl start apache2
-
+```
 By visiting the public DNS of our EC2 instance in our browser we will see that our Apache web server is running and the security groups are configured correctly.
 
 # Download and configure Wordpress
