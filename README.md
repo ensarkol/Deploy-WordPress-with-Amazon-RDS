@@ -16,7 +16,7 @@ At this point, we have created an Amazon RDS database and an EC2 instance. At th
 Up to this point, I've done a lot of configuration setup, created an Amazon RDS instance and an EC2 instance, allowed network access from your EC2 instance to your Amazon RDS instance, learned how to use SSH to connect to your EC2 instance, and configured a database user to be used by WordPress. Finally, we will finish making our WordPress site live. To complete the steps in this module, we will need to use SSH to connect to our EC2 instance.
 
 To run WordPress, we need to run a web server in our EC2 instance. 
-
+```
 sudo yum install -y httpd
 ```
 I ran the following command in my terminal to start the Apache web server:
