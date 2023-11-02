@@ -17,8 +17,8 @@ Up to this point, I've done a lot of configuration setup, created an Amazon RDS 
 
 To run WordPress, we need to run a web server in our EC2 instance. 
 
-sudo yum install -y httpd
-
+```sudo yum install -y httpd
+```
 I ran the following command in my terminal to start the Apache web server:
 
 ####
