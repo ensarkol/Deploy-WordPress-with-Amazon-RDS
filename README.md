@@ -21,7 +21,7 @@ sudo yum install -y httpd
 ```
 I ran the following command in my terminal to start the Apache web server:
 
-####
+
 ```
 sudo systemctl start apache2
 ```
