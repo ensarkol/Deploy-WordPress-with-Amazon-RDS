@@ -126,4 +126,4 @@ sudo systemctl restart apache2
 That's it. We have a live, publicly accessible WordPress installation using a fully managed MySQL database on Amazon RDS.
 
 
-
+Source:https://aws.amazon.com/tr/tutorials/deploy-wordpress-with-amazon-rds/
